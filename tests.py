@@ -63,6 +63,7 @@ def test_everything():
         os.mkdir("temp")
     except Exception:
         shutil.rmtree("temp")
+        os.mkdir("temp")
 
     os.chdir("temp")
 
